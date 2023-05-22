@@ -17,9 +17,8 @@ db.init_app(app)
 with app.app_context():
     from app.db_table.exception_table import *
     db.create_all()
-
-scheduler.init_app(app)
-scheduler.start()
+    scheduler.init_app(app)
+    scheduler.start()
 
 api = Api(app)
 
