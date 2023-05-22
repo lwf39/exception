@@ -4,3 +4,4 @@ __pycache__/
 */__cache__/*
 *.pyc
 .vscode
+config.py
